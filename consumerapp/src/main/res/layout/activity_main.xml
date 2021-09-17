@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:focusable="false"
+        android:imeOptions="actionSearch"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/search_for_users"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <ImageView
+        android:id="@+id/iv_user_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_no_result"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:contentDescription="@string/search_not_found"/>
+
+    <ImageView
+        android:id="@+id/iv_home_search"
+        android:padding="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_home_search"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/search_for_users"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sv_user"
+        tools:listitem="@layout/item_user" />
+
+</RelativeLayout>

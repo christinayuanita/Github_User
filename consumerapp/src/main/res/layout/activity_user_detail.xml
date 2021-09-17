@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.UserDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GithubUser.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="15dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_user"
+                        tools:src="@drawable/user1"
+                        style="@style/CircleImage.Medium"
+                        android:contentDescription="@string/user_image"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iv_user"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="15dp"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/tv_repository_count"
+                                style="@style/TextContent.White.Bold"
+                                tools:text="@string/repositories_count"
+                                android:textSize="17sp"
+                                android:textAlignment="center" />
+                            <TextView
+                                android:text="@string/repositories"
+                                style="@style/TextContent.White"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/tv_followers_count"
+                                style="@style/TextContent.White.Bold"
+                                tools:text="@string/followers_count"
+                                android:textSize="17sp"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:text="@string/followers"
+                                style="@style/TextContent.White"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/tv_following_count"
+                                tools:text="@string/following_count"
+                                android:textSize="17sp"
+                                style="@style/TextContent.White.Bold"
+                                android:textAlignment="center"/>
+                            <TextView
+                                android:text="@string/following"
+                                style="@style/TextContent.White"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_below="@id/ll_count"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        tools:text="@string/name"
+                        style="@style/TextContent.White.Bold"
+                        android:layout_marginBottom="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_company"
+                        tools:text="@string/company"
+                        android:drawablePadding="4dp"
+                        android:layout_marginBottom="3dp"
+                        style="@style/TextContent.White"
+                        app:drawableStartCompat="@drawable/ic_baseline_domain_24" />
+                    <TextView
+                        android:id="@+id/tv_location"
+                        tools:text="@string/location"
+                        android:drawablePadding="4dp"
+                        style="@style/TextContent.White"
+                        app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_user_detail"
+                style="@style/Toolbar"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/Theme.GithubUser.PopupOverlay"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/colorAccent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foregroundGravity="bottom"
+        app:fabSize="normal"
+        app:layout_anchor="@id/view_pager"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+        android:contentDescription="@string/add_favorite"/>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>

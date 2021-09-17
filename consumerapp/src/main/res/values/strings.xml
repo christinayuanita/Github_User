@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="username">username</string>
+    <string name="name">Name</string>
+    <string name="url">URL</string>
+    <string name="repositories">Repositories</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repositories_count">50</string>
+    <string name="followers_count">1100</string>
+    <string name="following_count">450</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="github_logo_image">github_logo</string>
+    <string name="user_image">user</string>
+    <string name="search_for_users">Search for users</string>
+    <string name="search_not_found">Search not found</string>
+    <string name="select_language">Select Language</string>
+    <string name="key_language">language</string>
+    <string name="there_is_no_followers">There is no follower</string>
+    <string name="there_is_no_following">There is no following</string>
+    <string name="add_favorite">add favorite</string>
+    <string name="there_is_no_favorite_user">There is no favorite user</string>
+    <string name="empty_favorite_user">Empty favorite user</string>
+    <string name="favorite_user">Favorite Users</string>
+    <string name="remove">Remove</string>
+    <string name="settings">Settings</string>
+    <string name="reminder">Reminder</string>
+    <string name="key_reminder">reminder</string>
+    <string name="message">Let\'s find popular user on Github!</string>
+    <string name="favorite_users">Favorite Users</string>
+    <string name="alarm_setup">Repeating alarm set up</string>
+    <string name="alarm_cancelled">Repeating alarm cancelled</string>
+    <string name="removed_from_favorite">%1$s removed from favorite</string>
+    <string name="added_to_favorite">%1$s added to favorite</string>
+    <string name="check_connection">Oops! Please check your network connection or try again later</string>
+</resources>

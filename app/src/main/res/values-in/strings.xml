@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="username">nama pengguna</string>
+    <string name="name">Nama</string>
+    <string name="url">URL</string>
+    <string name="repositories">Repositori</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="repositories_count">50</string>
+    <string name="followers_count">1100</string>
+    <string name="following_count">450</string>
+    <string name="company">Perusahaan</string>
+    <string name="location">Lokasi</string>
+    <string name="github_logo_image">github_logo</string>
+    <string name="user_image">pengguna</string>
+    <string name="search_for_users">Cari pengguna</string>
+    <string name="search_not_found">Pencarian tidak ditemukan</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="key_language">bahasa</string>
+    <string name="there_is_no_followers">Tidak ada pengikut</string>
+    <string name="there_is_no_following">Tidak ada yang mengikuti</string>
+    <string name="add_favorite">tambah favorit</string>
+    <string name="there_is_no_favorite_user">Tidak ada pengguna favorit</string>
+    <string name="empty_favorite_user">Pengguna favorit kosong</string>
+    <string name="favorite_user">Pengguna Favorit</string>
+    <string name="remove">Hapus</string>
+    <string name="settings">Pengaturan</string>
+    <string name="reminder">Pengingat</string>
+    <string name="key_reminder">pengingat</string>
+    <string name="message">Cari pengguna populer di Github!</string>
+    <string name="favorite_users">Pengguna Favorit</string>
+    <string name="appwidget_text">Pengguna Github Favorit</string>
+    <string name="no_data">Tidak Ada Data</string>
+    <string name="alarm_setup">Alarm diaktifkan</string>
+    <string name="alarm_cancelled">Alarm dibatalkan</string>
+    <string name="removed_from_favorite">%1$s dihapus dari favorit</string>
+    <string name="added_to_favorite">%1$s ditambahkan ke favorit</string>
+    <string name="check_connection">Oops! Cek koneksi jaringan atau coba lagi nanti</string>
+</resources>

@@ -1,0 +1,78 @@
+<resources>
+
+    <style name="Theme.GithubUser" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.GithubUser.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GithubUser.NoActionBar.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="TextList.Username">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextList.Url">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextContent.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextContent.White.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="civ_border_color">@android:color/white</item>
+    </style>
+
+    <style name="CircleImage.Small">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="CircleImage.Medium">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.GithubUser">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="Theme.GithubUser.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GithubUser.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
